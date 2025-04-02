@@ -1,0 +1,55 @@
+[2025-03-25 12:06:53.754] [info] Using configuration file /etc/xdg/waybar/config.jsonc
+[2025-03-25 12:06:53.755] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-03-25 12:06:53.755] [info] Using CSS file /etc/xdg/waybar/style.css
+[2025-03-25 12:06:53.761] [warning] module sway/workspaces: Disabling module "sway/workspaces", Socket path is empty
+[2025-03-25 12:06:53.763] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2025-03-25 12:06:53.766] [warning] module sway/scratchpad: Disabling module "sway/scratchpad", Socket path is empty
+[2025-03-25 12:06:53.769] [error] media stopped unexpectedly, is it endless?
+[2025-03-25 12:06:53.770] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2025-03-25 12:06:53.771] [warning] module temperature: Disabling module "temperature", Can't open /sys/class/thermal/thermal_zone0/temp
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/mouse1 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/mouse0 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/mice (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event14 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event13 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event12 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event11 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event10 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event9 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event8 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event7 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event6 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event5 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event4 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event3 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event2 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event1 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] Can't open /dev/input/event0 (are you in the input group?): EACCES Permission denied
+[2025-03-25 12:06:53.772] [warning] module keyboard-state: Disabling module "keyboard-state", Failed to find keyboard device: EACCES Permission denied
+[2025-03-25 12:06:53.774] [warning] module sway/language: Disabling module "sway/language", Socket path is empty
+[2025-03-25 12:06:53.775] [warning] No battery named BAT2
+[2025-03-25 12:06:53.775] [warning] Error while creating the menu : Failed to expand file: $HOME/.config/waybar/power_menu.xml. Menu popup not activated.
+[2025-03-25 12:06:53.884] [error] Failed to query power-profiles-daemon via dbus: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-03-25 12:06:53.890] [info] Bar configured (width: 1920, height: 30) for output: eDP-1
+Gdk-Message: 12:13:28.236: Error reading events from display: Broken pipe
+[2025-03-30 09:46:43.586] [info] Using configuration file /home/gofer/.config/waybar/config.jsonc
+[2025-03-30 09:46:43.587] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-03-30 09:46:43.587] [info] Using CSS file /home/gofer/.config/waybar/style.css
+[2025-03-30 09:46:43.591] [info] Hyprland IPC starting
+[2025-03-30 09:46:43.591] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-30 09:46:43.607] [info] Bar configured (width: 1920, height: 35) for output: eDP-1
+Gdk-Message: 09:56:51.833: Error reading events from display: Broken pipe
+[2025-03-31 18:31:49.378] [info] Using configuration file /home/gofer/.config/waybar/config.jsonc
+[2025-03-31 18:31:49.379] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-03-31 18:31:49.379] [info] Using CSS file /home/gofer/.config/waybar/style.css
+[2025-03-31 18:31:49.383] [info] Hyprland IPC starting
+[2025-03-31 18:31:49.383] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-31 18:31:49.399] [info] Bar configured (width: 1920, height: 35) for output: eDP-1
+[2025-03-31 18:36:38.436] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-03-31 18:36:38.450] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-31 18:36:38.470] [info] Reloading...
+[2025-03-31 18:36:38.477] [info] Using configuration file /home/gofer/.config/waybar/config.jsonc
+[2025-03-31 18:36:38.477] [info] Using CSS file /home/gofer/.config/waybar/style.css
+[2025-03-31 18:36:38.479] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-31 18:36:38.482] [info] Bar configured (width: 1920, height: 35) for output: eDP-1
+Gdk-Message: 22:07:19.916: Error reading events from display: Broken pipe

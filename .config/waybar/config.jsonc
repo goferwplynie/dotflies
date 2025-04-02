@@ -1,0 +1,47 @@
+{
+    "layer": "top",
+    "position": "top",
+    "reload_style_on_change": true,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network","battery", "disk", "memory"],
+    "network" : {
+	"format" : "{essid} {icon}",
+	"tooltip": true,
+	"tooltip-format-wifi": "{gwaddr}\n{bandwidthUpBits} {bandwidthDownBits}",
+	"format-icons": [":c", ":(", ":3", ":3c"],
+	"format-disconnected": "discOwOnnected :c"
+    },
+    "battery": {
+	"format": "{icon} {capacity}%",
+	"format-icons": [" ", " ", " ", " ", " "],
+	"tooltip-format" : "{time}"
+    },
+    "disk" : {
+	"format" : "󰋊 {percentage_free}%",
+	"tooltip-format": "{free} out of {total} left"
+    },
+    "memory" : {
+	"format" : "  {percentage}%",
+	"tooltip-format" : "{used}GB out of {total}GB used"
+    },
+    "clock" : {
+	"interval" : 1,
+	"format" : "{:%H:%M:%S}",
+	"tooltip-format": "<tt>{calendar}</tt>",
+	"calendar" : {
+	    "weeks-pos" : "left",
+	    "mode-mon-col" : 3,
+	    "format" : {
+		"today" : "<span color='#b96864'><u>{}</u></span>",
+		"weeks" : "<span color='#fc4ef4'>W{:%U}</span>"
+	    }
+	},
+	"actions":  {
+            "on-click-right": "mode"
+        }
+    },
+    "hyprland/workspaces" : {
+	"format" : "<span> </span>"
+    }
+}
