@@ -17,10 +17,6 @@ vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action, { desc = 'code action
 
 vim.keymap.set('n', '<leader>df', vim.diagnostic.open_float, { desc = 'open diagnostics' })
 
-
 vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'go to definition' })
 vim.keymap.set('n', '<leader>H', vim.lsp.buf.hover, { desc = 'hover documentation' })
 
-vim.keymap.set('n', '<leader>td', function()
-  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
-end, { silent = true, noremap = true })

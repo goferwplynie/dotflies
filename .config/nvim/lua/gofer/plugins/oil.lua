@@ -24,7 +24,10 @@ return {
 	    float = {
 		padding = 2,
 		border = "rounded"
-	    }
+	    },
+	    view_options = {
+	show_hidden = true
+      }
 	})
     	vim.keymap.set('n', '<leader>ee', '<CMD>Oil --float<CR>', {desc = "open explorer"})
     end

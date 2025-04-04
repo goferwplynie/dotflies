@@ -19,7 +19,7 @@ vim.opt.splitbelow = true
 
 vim.opt.scrolloff = 10
 
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"

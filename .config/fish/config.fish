@@ -1,4 +1,3 @@
-fastfetch
 set -x EDITOR 'nvim'
 set -g fish_greeting
 
@@ -7,5 +6,5 @@ function fish_prompt
 end
 
 if status is-interactive
-    
+  fastfetch
 end
