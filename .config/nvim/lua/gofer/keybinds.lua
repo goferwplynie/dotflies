@@ -20,3 +20,4 @@ vim.keymap.set('n', '<leader>df', vim.diagnostic.open_float, { desc = 'open diag
 vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'go to definition' })
 vim.keymap.set('n', '<leader>H', vim.lsp.buf.hover, { desc = 'hover documentation' })
 
+vim.keymap.set('t', 'Esc', "<C-\\><C-n><C-w>h",{silent = true})

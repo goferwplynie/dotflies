@@ -20,5 +20,5 @@ git branch -M main
 
 set commitName "init :3"
 
-git commit -m commitName >/dev/null
+git commit -m $commitName >/dev/null
 echo "commited '$commitName'"

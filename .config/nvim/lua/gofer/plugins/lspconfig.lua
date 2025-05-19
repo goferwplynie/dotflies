@@ -16,21 +16,9 @@ return {
 		local luasnip = require('luasnip')
 		mason_lspconfig.setup_handlers({
 			function(server)
-				if server == "pyright" then
-					lspconfig[server].setup({
-						capabilities = capabilities,
-						settings = {
-							python = {
-								venvPath = ".",
-								venv = ".venv",
-							}
-						}
-					})
-				else
-					lspconfig[server].setup({
-						capabilities = capabilities
-					})
-				end
+				lspconfig[server].setup({
+					capabilities = capabilities
+				})
 			end
 		})
 		local cmp = require("cmp")
