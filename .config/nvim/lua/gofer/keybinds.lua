@@ -21,3 +21,5 @@ vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'go to defini
 vim.keymap.set('n', '<leader>H', vim.lsp.buf.hover, { desc = 'hover documentation' })
 
 vim.keymap.set('t', 'Esc', "<C-\\><C-n><C-w>h",{silent = true})
+
+

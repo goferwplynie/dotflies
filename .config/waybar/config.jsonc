@@ -1,47 +1,104 @@
 {
-    "layer": "top",
-    "position": "top",
-    "reload_style_on_change": true,
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["network","battery", "disk", "memory"],
-    "network" : {
-	"format" : "{essid} {icon}",
-	"tooltip": true,
-	"tooltip-format-wifi": "{gwaddr}\n{bandwidthUpBits} {bandwidthDownBits}",
-	"format-icons": [":c", ":(", ":3", ":3c"],
-	"format-disconnected": "discOwOnnected :c"
+  "layer": "top",
+  "position": "top",
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-top": 6,
+  "height": 32,
+  "spacing": 0,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "group/power"
+
+  ],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "network",
+    "battery",
+    "memory",
+    "cpu",
+    "clock"
+  ],
+  "memory": {
+    "format": "<span color='#8A2BE2'> </span>{used:0.1f}Gb/{total:0.1f}Gb",
+    "tooltip": true,
+    "tooltip-format": "{used:0.2f}Gb/{total:0.2f}Gb"
+  },
+  "cpu": {
+    "format": "<span color='#FF9F0A'> </span>{usage}%",
+    "tooltip": true
+  },
+  "hyprland/workspaces": {
+    "format": "{id} {windows}",
+    "persistent-workspaces" : {
+      "*": [1,2,3,4,5,6,7,8,9]
     },
-    "battery": {
-	"format": "{icon} {capacity}%",
-	"format-icons": [" ", " ", " ", " ", " "],
-	"tooltip-format" : "{time}"
-    },
-    "disk" : {
-	"format" : "󰋊 {percentage_free}%",
-	"tooltip-format": "{free} out of {total} left"
-    },
-    "memory" : {
-	"format" : "  {percentage}%",
-	"tooltip-format" : "{used}GB out of {total}GB used"
-    },
-    "clock" : {
-	"interval" : 1,
-	"format" : "{:%H:%M:%S}",
-	"tooltip-format": "<tt>{calendar}</tt>",
-	"calendar" : {
-	    "weeks-pos" : "left",
-	    "mode-mon-col" : 3,
-	    "format" : {
-		"today" : "<span color='#b96864'><u>{}</u></span>",
-		"weeks" : "<span color='#fc4ef4'>W{:%U}</span>"
-	    }
-	},
-	"actions":  {
-            "on-click-right": "mode"
-        }
-    },
-    "hyprland/workspaces" : {
-	"format" : "<span> </span>"
+    "window-rewrite-default": ":3",
+    "window-rewrite": {
+      "title<.*youtube.*>": "",
+      "class<firefox>": "", 
+      "class<firefox> title<.*github.*>": "", 
+      "title<.*nvim.*>": "",
+      "class<kitty>": "",
+      "class<discord>": "",
+      "class<org.kde.dolphin>": "",
+      "class<kitty> title<.*~/d/.c/.*>": "󱁿",
+      "class<obsidian>": ""
     }
+  },
+  "hyprland/window": {
+    "format": "「{class}」",
+    "rewrite": {
+	".*kitty.*": "meow meow 󰄛 ",
+	".*discord.*": "I may be a Polish nationalist offline but I'm a princess online",
+	".*firefox.*": " furry",
+    }
+  },
+  "network" : {
+    "format" : "{essid} {icon}",
+    "tooltip": true,
+    "tooltip-format-wifi": "{bandwidthUpBits} {bandwidthDownBits}",
+    "format-icons": [":c", ":(", ":)", ":3", ":3c"]
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span color='#28CD41'>{icon}</span>{capacity}% ",
+    "format-charging": " 󱐋{capacity}%",
+    "interval": 1,
+    "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"],
+    "tooltip": true
+  },
+"custom/quit": {
+    "format": "<span font='18px'>󰗼 </span>",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+},
+"custom/reboot": {
+    "format": "<span font='18px'>󰜉 </span>",
+    "tooltip": false,
+    "on-click": "reboot"
+},
+"custom/power": {
+    "format": "<span font='18px'> </span>",
+    "tooltip": false,
+    "on-click": "shutdown now"
+},
+"group/power":{
+  "orientation": "inherit",
+  "drawer" : {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": false,
+  },
+  "modules":[
+    "custom/power",
+    "custom/reboot",
+    "custom/quit"
+
+  ]
+}
 }

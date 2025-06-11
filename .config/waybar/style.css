@@ -1,64 +1,98 @@
-@import url('../../.cache/wal/colors-waybar.css');
-
-
 window#waybar{
-    all:unset
+  background-color: transparent;
+  font-family: Jetbrains mono, sans-serif;
+  font-style: italic;
 }
 
-#workspaces {
-    padding: 5px;
-    background-color: @color10;
-    border-radius: 24px
-}
-#workspaces button {
-    all:unset;
-    padding: 0px 5px;
-    color: alpha(black,.4);
-    transition: all .2s ease;
+#workspaces{
+  margin: 4px;
+  background-color: #ab89a7;
+  border-radius: 12px;
 }
 
-#workspaces button:hover {
-    color:rgba(0,0,0,0);
-    border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
-    transition: all 1s ease;
-}
-#workspaces button.active {
-    color: @color9;
-    border: none;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
-}
-#workspaces button.empty {
-    color: rgba(0,0,0,0);
-    border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
-}
-#workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
-    border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
-    transition: all 1s ease;
-}
-#workspaces button.empty.active {
-    color: @color9;
-    border: none;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+#workspaces button.active{
+  border-bottom: 2px solid white;
 }
 
-.modules-right {
-    margin: 10px 10px 5px 0px;
+#workspaces button{
+  color: #e3e6e4;
+}
+
+#workspaces button.empty{
+  color: #333333;
+}
+#workspaces button.empty.active{
+  border-bottom: 2px solid #333333;
+}
+
+#workspaces button.urgent{
+  color: #CF4551;
+}
+#workspaces button.urgent.active{
+  border-bottom: 2px solid #CF4551;
+}
+
+#custom-power{
+  color: #f05d6a;
+  font-size: 14px;
+  padding: 0px 8px;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+#custom-reboot{
+  color: #e6b740;
+  font-size: 14px;
+  padding: 0px 8px;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+#custom-quit{
+  font-size: 14px;
+  padding: 0px 8px;
+  margin: 4px 0px;
+  font-weight: bold;
+}
+
+.modules-right{
+  background-color:#ab89a7 ;
+  border-radius: 12px;
+  padding: 0px 14px;
+  margin: 4px 4px;
+}
+
+.modules-center{
+  margin: 4px ;
+}
+
+#window {
+    background-color:#ab89a7 ;
+    padding: 0 24px;
+    border-radius: 12px;
+}
+
+window#waybar.empty #window{
+  background-color: transparent;
+  color:#8B7088 ;
 }
 
 #network{
-    padding: 0px 10px;
+  margin: 0px 8px;
 }
 
 #battery{
-    padding: 0px 10px;
+  margin: 0px 8px;
 }
-#disk{
-    padding: 0px 10px;
-}
+
 #memory{
-    padding: 0px 10px;
+  margin: 0px 8px;
+}
+
+#cpu{
+  margin: 0px 8px;
+}
+
+#clock{
+  margin: 0px 8px;
 }

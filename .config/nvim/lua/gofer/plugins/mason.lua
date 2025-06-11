@@ -31,7 +31,8 @@ return {
         "emmet_ls",
         "pyright",
 	"gopls",
-	"clangd"
+	"clangd",
+	"phpactor"
       },
     })
 
@@ -42,6 +43,7 @@ return {
         "black", 
         "pylint",
         "eslint_d",
+	"phpstan"
       },
     })
   end,

@@ -8,19 +8,44 @@ return {
 		'L3MON4D3/LuaSnip',
 		{ "antosha417/nvim-lsp-file-operations", config = false },
 		{ "folke/neodev.nvim",                   opts = {} },
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
 	},
 	config = function()
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		local lspconfig = require("lspconfig")
-		local mason_lspconfig = require("mason-lspconfig")
 		local luasnip = require('luasnip')
-		mason_lspconfig.setup_handlers({
-			function(server)
-				lspconfig[server].setup({
-					capabilities = capabilities
-				})
-			end
-		})
+
+		local servers = {
+			lua_ls = {
+				settings = {
+					Lua = {
+						diagnostics = { globals = { "vim" } },
+						telemetry = { enable = false },
+						workspace = {
+							library = vim.api.nvim_get_runtime_file("", true),
+						},
+
+					},
+				}
+			},
+			--gopls = {},
+			pyright = {},
+			html = {},
+			svelte = {},
+			clangd = {},
+			jdtls = {},
+			ts_ls = {},
+			intelephense = {},
+		}
+
+		--mason_lspconfig.setup_handlers({
+		--function(server)
+		--lspconfig[server].setup({
+		--capabilities = capabilities
+		--})
+		--end
+		--})
 		local cmp = require("cmp")
 		cmp.setup {
 			snippet = {
@@ -61,5 +86,9 @@ return {
 				{ name = 'luasnip' },
 			},
 		}
+		for server, config in pairs(servers) do
+			config.capabilities = capabilities
+			lspconfig[server].setup(config)
+		end
 	end,
 }
