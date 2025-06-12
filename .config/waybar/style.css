@@ -74,7 +74,7 @@ window#waybar{
 
 window#waybar.empty #window{
   background-color: transparent;
-  color:#8B7088 ;
+  color: transparent ;
 }
 
 #network{

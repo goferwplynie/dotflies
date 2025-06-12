@@ -1,0 +1,18 @@
+[2025-06-12 10:02:45.618] [info] Using configuration file /home/gofer/.config/waybar/config.jsonc
+[2025-06-12 10:02:45.619] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-06-12 10:02:45.619] [info] Using CSS file /home/gofer/.config/waybar/style.css
+[2025-06-12 10:02:45.623] [info] Hyprland IPC starting
+[2025-06-12 10:02:45.624] [info] Loading persistent workspaces from Waybar config
+[2025-06-12 10:02:45.624] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-06-12 10:02:45.624] [info] Registering for Hyprland's 'windowtitle' events because a user-defined window rewrite rule uses the 'title' field.
+[2025-06-12 10:02:45.745] [warning] Requested height: 32 is less than the minimum height: 43 required by the modules
+[2025-06-12 10:02:45.745] [info] Bar configured (width: 1900, height: 43) for output: eDP-1
+[2025-06-12 10:02:54.891] [info] Using configuration file /home/gofer/.config/waybar/config.jsonc
+[2025-06-12 10:02:54.892] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-06-12 10:02:54.892] [info] Using CSS file /home/gofer/.config/waybar/style.css
+[2025-06-12 10:02:54.895] [info] Hyprland IPC starting
+[2025-06-12 10:02:54.896] [info] Loading persistent workspaces from Waybar config
+[2025-06-12 10:02:54.896] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-06-12 10:02:54.896] [info] Registering for Hyprland's 'windowtitle' events because a user-defined window rewrite rule uses the 'title' field.
+[2025-06-12 10:02:55.018] [warning] Requested height: 32 is less than the minimum height: 43 required by the modules
+[2025-06-12 10:02:55.018] [info] Bar configured (width: 1900, height: 43) for output: eDP-1

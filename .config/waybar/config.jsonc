@@ -40,7 +40,7 @@
       "class<firefox>": "", 
       "class<firefox> title<.*github.*>": "", 
       "title<.*nvim.*>": "",
-      "class<kitty>": "",
+      "class<kitty>": "󰄛 ",
       "class<discord>": "",
       "class<org.kde.dolphin>": "",
       "class<kitty> title<.*~/d/.c/.*>": "󱁿",
